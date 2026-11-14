@@ -7,5 +7,6 @@
     <div class="container">
         <h2 class="title">StoryTime</h2>
         <SearchBar/>
+        <p>resultados para: {{ searchQuery }}</p>
     </div>
 </template>
