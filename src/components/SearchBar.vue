@@ -1,7 +1,19 @@
 <script setup>
+    import { ref } from 'vue';
+    import axios from 'axios';
 
+    let searchQuery = ref("");
+    async function fetchMovieByName(){
+        const response = await axios.get(
+            `https://api.themoviedb.org/3/search/movie?query=${searchQuery.value}`
+        );
+
+        const data = JSON.stringify(response.data);
+
+        return data;
+    } 
 </script>
-
+0
 <style lang="css">
     .search-container {
         display: flex;
@@ -37,8 +49,13 @@
 
 <template>
     <div class="search-container">
-        <input class="search-bar" placeholder="Avengers Doomsday"/>
-        <button class="search-button">buscar</button>
+        <input 
+            class="search-bar" 
+            v-model="searchQuery"
+            type="text"
+            placeholder="Avengers Doomsday"
+        />
+        <button class="search-button" @click="fetchMovieByName">buscar</button>
         <button class="filter-button">filtrar</button>
     </div>
 </template>
