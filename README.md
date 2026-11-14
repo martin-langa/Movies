@@ -1,5 +1,11 @@
-# Vue 3 + Vite
+# MovieBase
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+MovieBase é uma plataforma que permite obter informação detalhada sobre os melhores filmes da atualidade, e também de filmes que marcaram uma geração
+
+A plataforma foi construida com o próposito de consolidar as minhas abilidades de desenvolvimento em Vue, e também como forma de practicar a integração de API's em applicações web.
+
+Para o desenvolvimento foram utilizadas as seguintes tecnologias:
+
+
 
 Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
