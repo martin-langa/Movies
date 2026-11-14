@@ -1,0 +1,14 @@
+
+.container {
+    overflow-y: hidden;
+    padding: 12px;
+    min-height: 20vh;
+    background-color: rgb(77, 155, 100);
+}
+
+.title {
+    
+    font-size: 24px;
+    color: white;
+    font-family: sans-serif;
+}
